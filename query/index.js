@@ -29,7 +29,7 @@ const PORT = process.env.PORT || 4002;
 app.listen(PORT, async () => {
   console.log(`Listening on port ${PORT}`);
 
-  const res = await axios.get("http://localhost:4005/events");
+  const res = await axios.get("http://event-bus-srv:4005/events");
 
   for (let i = 0; i < res.data.length; i++) {
     const event = res.data[i];
