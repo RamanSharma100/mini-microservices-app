@@ -14,11 +14,11 @@ spec:
     spec:
       containers:
         - name: event-bus
-          image: minimicroservices/event-bus
+          image: projectscreator/mmsrv-event-bus
 ---
 apiVersion: v1
 kind: Service
-meta-data:
+metadata:
   name: event-bus-srv
 spec:
   selector:

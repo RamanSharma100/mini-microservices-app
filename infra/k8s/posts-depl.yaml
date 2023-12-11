@@ -14,11 +14,11 @@ spec:
     spec:
       containers:
         - name: posts
-          image: minimicroservices/posts
+          image: projectscreator/mmsrv-posts
 ---
 apiVersion: v1
 kind: Service
-meta-data:
+metadata:
   name: posts-cip-srv
 spec:
   selector:

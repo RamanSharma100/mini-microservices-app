@@ -14,11 +14,11 @@ spec:
     spec:
       containers:
         - name: comments
-          image: minimicroservices/comments
+          image: projectscreator/mmsrv-comments
 ---
 apiVersion: v1
 kind: Service
-meta-data:
+metadata:
   name: comments-srv
 spec:
   selector:

@@ -14,11 +14,11 @@ spec:
     spec:
       containers:
         - name: query
-          image: minimicroservices/query
+          image: projectscreator/mmsrv-query
 ---
 apiVersion: v1
 kind: Service
-meta-data:
+metadata:
   name: query-srv
 spec:
   selector:
